@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-Transform</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div>
+      <h1>CSS-Transform</h1>
+      <p>
+        Adətən bu özəllikdən :hover zamanı tətbiq edirlər. Bu CSS-özəlliyinin
+        bir neçə value-sı vardır.
+      </p>
+      <ul>
+        <li>Translate</li>
+        <li>Rotate</li>
+        <li>Skew</li>
+        <li>Scale</li>
+      </ul>
+    </div>
+    <div>
+      <h1>Translate</h1>
+      <p>
+        Elementi şaquli və ya üfüqi istiqamətdə hərəkət etdirmək və ya çevirmək
+        üçün istifadə olunur. transform: translate (100px); Hərəkət dərəcəsini
+        müəyyən etmək üçün px tipini təyin edirik.Bu halda birinci dəyər sağa
+        sola hərəkət etdirmək üçündür.Dəyəri mənfi versək sola gedəcək Dəyəri
+        mənfi versək sola gedəcək.
+      </p>
+
+      <div class="box"></div>
+    </div>
+
+    <div>
+      <p>
+        İkinci dəyər isə aşağı-yuxarı hərəkət etdirmək üçün istifadə
+        olunur.Mənfi verəndə yuxarı hərəkət edəcək , müsbət dəyərdə isə aşağı
+        hərəkət edəcək.
+      </p>
+      <div class="box1"></div>
+    </div>
+
+    <div>
+      <h1>Rotate</h1>
+      <p>
+        Döndürmə parametri, adından da göründüyü kimi, obyekti fırlatmaq üçün
+        istifadə olunan parametr növüdür. “deg” tipində obyektin neçə dərəcə
+        fırlanacağını müəyyənləşdiririk.Burda 90 dərəcə elementi fırladacaq
+      </p>
+      <div class="box2"></div>
+
+      <p>
+        Obyektin tərsinə fırlanması üçün isə dəyəri mənfi vermək kifayət edir
+      </p>
+      <div class="box3"></div>
+    </div>
+
+    <div>
+      <h1>Skew</h1>
+      <p>
+        Skew parametri ilə div-ləri sağa-sola əyə bilərsiniz. Əymə zamanı biz
+        əymənin dərəcəsini və miqdarını müəyyənləşdiririk.Mənfi verəndə sağa
+        əyilir qutu
+      </p>
+      <div class="box4"></div>
+    </div>
+
+    <div>
+      <p>
+        Skew parametri ilə div-ləri sağa-sola əyə bilərsiniz. Əymə zamanı biz
+        əymənin dərəcəsini və miqdarını müəyyənləşdiririk.Müsbət verəndə sola
+        əyilir qutu
+      </p>
+      <div class="box5"></div>
+    </div>
+
+    <div>
+      <h1>Scale</h1>
+      <p>
+        Scale parametri ilə böyütmə və kiçiltmə əməliyyatlarını edirik. Siz
+        müxtəlif CSS fərdiləşdirmələrində miqyas parametrindən istifadə edərək
+        div bölmələrinizi, şəkillərinizi və ya menyularınızı fərdiləşdirə
+        bilərsiniz. Böyütmək istəyəndə 1-dan yuxarı qiymətlər veririk.Kiçiltmək
+        üçün isə 0-1 arası qiymətlər yazırlar
+      </p>
+      <div>
+        <h1>Səkilin Scale parametri ilə böyüdülməsi</h1>
+
+        <div class="qutu">
+          <img src="/img/5.jpg" alt="img" />
+        </div>
+      </div>
+
+      <div class="box6"></div>
+    </div>
+
+    <div>
+      <h1>CSS-Animations</h1>
+      <p>
+        CSS-də animasiya xüsusiyyəti; Rəng, fon rəngi, hündürlük və ya genişlik
+        kimi bir çox CSS xüsusiyyətlərini canlandırmaq və təsir etmək üçün
+        istifadə edilə bilər. Animasiyalar elementə tədricən bir formadan
+        digərinə keçməyə imkan verir. CSS animasiyasından istifadə etmək üçün
+        əvvəlcə bəzi əsas qaydaları və parametrləri təyin etməlisiniz. Qaydalar
+        və parametrlər müəyyən vaxtlarda elementin hansı formaya malik olacağını
+        müəyyənləşdirir.
+        <br />
+        CSS Animasiyalarından istifadə etmək üçün @keyframes qaydasından
+        istifadə etməliyik. @keyframes qaydası animasiyanın əsas strukturunu
+        yaradır. Animasiyanın müəyyən vaxtlarda hansı formada dəyişəcəyini
+        müəyyən edən qaydadır.
+      </p>
+    </div>
+    <div>
+      <h1>Color change with Animations</h1>
+      <p>
+        Keyframe-in iş məntiqini daha yaxşı başa düşmək üçün rəng keçidi
+        nümunəsi edək.Stil teqləri arasında keyframe-I tətbiq edək və onu rengli
+        animasiya adlandıraq. From-da yazılan hissə ilk formada görünəndir ,
+        To-da olan isə animasiyadan sonra tətbiq ediləcək formadır.
+      </p>
+
+      <div class="animasiya"></div>
+    </div>
+
+    <div>
+      <h1>Animasiyanın Faizlərə Bölünməsi</h1>
+      <p>
+        Key Frame-də animasiya dəyərini faiz olaraq təyin etməklə də rəngi
+        dəyişə bilərik. Məsələn, animasiya rənglərini 4 ayrı bölməyə ayıraq.
+        Animasiya prosesində; 10% tamamlandıqda qırmızı rəng, 40% tamamlandıqda
+        yaşıl rəng, Animasiya 60% tamamlandıqda mavi, 100% tamamlandıqda isə
+        sarı rənglə bitəcək.
+      </p>
+      <div class="change"></div>
+    </div>
+
+    <div>
+      <h1>Animasiya ilə Hərəkətləndirmə</h1>
+      <p>
+        Key Frame-lə biz nəinki rəngləndirə, həm də obyektlərin yerini
+        dəyişdirə, hərəkət effekti və hərəkət animasiyası verə bilərik. Məsələn,
+        div-i aşağı hərəkət etdirmək istəyiriksə, position teqlərindən istifadə
+        etməliyik.
+      </p>
+
+      <div class="hereket"></div>
+    </div>
+
+    <div>
+      <h1>Animasiyanın Təkrarlarını Vermək</h1>
+      <p>
+        Animasiyalarımızın neçə dəfə təkrarlanacağını animasiya-iteration-count:
+        teqi ilə müəyyən edirik. Bunu rəqəmlə (1 dəfə təkrarlayın, 6 dəfə
+        təkrarlayın) və ya sonsuz bir döngədə edə bilərik. Məsələn, animasiyanın
+        10 dəfə təkrarlanmasını istəyiriksə, aşağıdakı nümunəni nəzərdən keçirə
+        bilərik:
+      </p>
+      <div class="tekrarlanma"></div>
+    </div>
+
+    <div>
+      <h1>
+        CSS Animasiyaları CSS JavaScript istifadə etmədən HTML elementlərinin
+        animasiyaya imkan verir!
+      </h1>
+
+      <h1>Animasiyanın Keçidlərini nezerden kecirek</h1>
+      <p>
+        Animasiyada tətbiq olunan keçid effektlərinin növlərini dəyişmək
+        mümkündür. Keçid effektlərinin növünü animation-timing-function etiketi
+        ilə edirik.
+      </p>
+      <ul>
+        </li>
+
+        <li>animation-timing-function: linear; => Fasiləsiz xətti keçidi təmin edir.</li>
+        <li>animation-timing-function: ease; => Fasilə verərək addım-addım keçidlər edir.</li>
+        <li>animation-timing-function: ease-in-out; => Yavaşdan sürətliyə keçir.</li>
+        <li> animation-timing-function: ease-out; => Yavaş başlayır, tez bitir.</li>
+          <li>animation-timing-function: ease-in; => Sürətlə başlayır, yavaş bitir.</li>
+        
+     </ul>
+    </div>
+    <!--elementin bir xett uzre hereket etdirilmesi-->
+    <div class="xettuzre"></div>
+    <div>
+      <h1>Animasiyanın Yönünü Təyin etmək</h1>
+      <p>Bunun üçün biz animation-direction-dan istifadə edirik
+      </p>
+
+      <table>
+        <tr>
+          <td>normal</td>
+          <td>Cari dəyər. Animasiya normal olaraq göstərilir (irəli)
+          </td>
+        </tr>
+        <tr>
+          <td>reverse
+          </td>
+          <td>Animasiya tərs istiqamətdə göstərilir (geri)
+          </td>
+        </tr>
+        <tr>
+          <td>alternate
+          </td>
+          <td>Animasiya əvvəlcə irəli, sonra geriyə doğru göstərilir
+          </td>
+        </tr>
+        <tr>
+          <td>alternate-reverse
+          </td>
+          <td>Animasiya əvvəlcə geriyə, sonra irəliyə doğru oynanılır
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="square"></div>
+
+
+    <div>
+      <h1>CSS-Transitions</h1>
+      <p>CSS transition Özelliği bir elementə hover olduğunda ya da .active kimi bir classname aldğında dəyişən stil özelliklərini keçişli bir şəkildə verməyə köməklik edir.Aşağıdakı property-ləri var
+      </p>
+<ul>
+<li>transition-property</li>
+<li>transition-duration</li>
+<li>transition-timing-function</li>
+<li>transition-delay</li>
+<li> transition kısa yolu yazımı</li>
+  </ul>
+    </div>
+
+    <div>
+<h1>Transition Duration</h1>
+<p>Keçid müddəti vaxtı bildirmək üçün istifadə edilir. Keçid vaxtını saniyə və millisaniyələrlə daxil etməlisiniz.
+</p>
+
+<div class="vaxt"></div>
+    </div>
+
+
+    <div>
+<h1>Transition-timing-function</h1>
+<p>Tətbiq olunan keçid effektlərinin növlərini dəyişmək mümkündür
+</p>
+
+<table>
+  
+  <tr>
+    <td>ease 
+    </td>
+    <td> animasiya ortaya doğru sürətlənir və sonra dayanana yaxın yavaşlayır.
+    </td>
+  </tr>
+  <tr>
+    <td>ease-in 
+    </td>
+    <td>animasiya yavaş başlayır və tamamlanana qədər sürətlənir.
+
+    </td>
+  </tr>
+  <tr>
+    <td>ease-out 
+    </td>
+    <td> Animasiya tez başlayır və yavaş-yavaş bitir.
+
+    </td>
+  </tr>
+  <tr>
+    <td>ease-in-out </td>
+    <td> Animasiya yavaş-yavaş başlayır və sürətləndirmək üçün keçid edir, sonra animasiyanı tamamlamaq üçün yenidən yavaşlayır.
+
+    </td>
+  </tr>
+  <tr>
+    <td> linear  </td>
+    <td> Animasiya sürəti animasiyanın əvvəlindən sonuna qədər bərabər şəkildə davam edir.
+
+    </td>
+  </tr>
+</table>
+
+    </div>
+
+
+    <div>
+<h1>Transition Delay</h1>
+<p>Transition Delay css xassəsi çox yayılmış keçid xüsusiyyətidir. Transition verdiyimiz elementin müəyyən gecikmə ilə gəlməsini vermək üçün istifadə edirik
+</p>
+    </div>
+
+    <div class="demo-delay-wrapper">
+    <div class="demo-delay"></div>
+    </div>
+
+    <!------ Transition--->
+   
+
+    
+
+   
+
+  </body>
+</html>

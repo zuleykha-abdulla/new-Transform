@@ -1,0 +1,340 @@
+* {
+  margin: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: rgb(27, 27, 27);
+  color: white;
+  font-size: 20px;
+}
+h1 {
+  text-align: center;
+}
+
+/*sağa sola hərəkət etdirmək */
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(192, 61, 138);
+}
+
+.box:hover {
+  transform: translate(100px);
+}
+
+.box1 {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(83, 45, 187);
+  margin-left: 200px;
+}
+
+.box1:hover {
+  transform: translate(0px, -100px);
+}
+
+.box2 {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(218, 48, 56);
+  margin-left: 400px;
+}
+
+.box2:hover {
+  transform: rotate(45deg);
+}
+
+.box3 {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  margin-left: 400px;
+}
+
+.box3:hover {
+  transform: rotate(-45deg);
+}
+
+.box4 {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(22, 177, 22);
+  margin-left: 200px;
+}
+
+.box4:hover {
+  transform: skew(-50deg);
+}
+
+.box5 {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  margin-left: 200px;
+}
+
+.box5:hover {
+  transform: skew(50deg);
+}
+.image {
+  width: 20px;
+  height: 20px;
+  background-image: url();
+  margin-left: 500px;
+  position: relative;
+}
+
+.image:hover {
+  transform: scale(0.3);
+}
+
+/*Sekilin Scale parametri ilə böyüdulmesi*/
+
+.qutu {
+  width: 100px;
+  height: 100px;
+  margin-left: 500px;
+}
+
+img {
+  transition: transform 0.3s;
+}
+
+img:hover {
+  transform: scale(1.5);
+}
+
+.box6 {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  margin-left: 100px;
+}
+
+.box6:hover {
+  transform: scale(0.3);
+}
+/* Animations*/
+
+@keyframes renglianimasiya {
+  from {
+    background-color: yellow;
+  }
+  to {
+    background-color: purple;
+  }
+}
+.animasiya {
+  width: 200px;
+  height: 200px;
+  margin-left: 50px;
+  background-color: yellow;
+  animation-name: renglianimasiya;
+  animation-duration: 30s;
+}
+
+/*  Key Frame-də animasiya dəyərini faiz olaraq təyin etməklə də rəngi
+        dəyişə bilərik.*/
+
+@keyframes rengdeyisme {
+  10% {
+    background-color: red;
+  }
+  40% {
+    background-color: green;
+  }
+  60% {
+    background-color: blue;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
+
+.change {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  animation-name: rengdeyisme;
+  animation-duration: 30s;
+}
+
+/*Animasiya ilə Hərəkətləndirmə*/
+
+@keyframes anime3 {
+  10% {
+    background-color: rgb(104, 77, 204);
+    top: 10px;
+  }
+  15% {
+    background-color: rgba(243, 78, 13, 0.911);
+    top: 20px;
+  }
+  20% {
+    background-color: lawngreen;
+    top: 30px;
+  }
+}
+
+.hereket {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  animation-name: anime3;
+  animation-duration: 10s;
+}
+
+/* hereketin tekrarlanmasi ucun*/
+
+@keyframes tekrar {
+  10% {
+    background-color: peru;
+    top: 10px;
+  }
+  15% {
+    background-color: deeppink;
+    top: 20px;
+  }
+  20% {
+    background-color: lawngreen;
+    top: 30px;
+  }
+}
+.tekrarlanma {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  animation-name: tekrar;
+  animation-duration: 3s;
+  animation-iteration-count: 10;
+}
+/*elementin bir xett uzre herekete getirilmesi*/
+
+.xettuzre {
+  width: 100px;
+  height: 100px;
+  background: rgb(94, 35, 231);
+  position: relative;
+  animation: mymove 5s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes mymove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 200px;
+  }
+}
+/* cedvele Animasiyanın istiqametinin novlerini qeyd edirik*/
+table,
+td,
+th {
+  border: 2px solid white;
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+}
+/* cedvel bitdi*/
+
+.square {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: myfirst 5s 2;
+  animation-direction: alternate;
+}
+
+@keyframes myfirst {
+  0% {
+    background: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background: red;
+    left: 0px;
+    top: 0px;
+  }
+}
+/*Keçid müddəti vaxtı bildirmək üçün istifadə edilir.*/
+.vaxt {
+  transition-duration: 2s;
+  transition-property: padding, background-color;
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  padding: 50px;
+  box-sizing: content-box;
+}
+.vaxt:hover {
+  padding: 100px;
+  background-color: red;
+}
+/*cedvel basladi*/
+table,
+td,
+th {
+  border: 2px solid white;
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+}
+/* cedvel bitdi*/
+
+.demo-delay-wrapper {
+  width: 350px;
+  height: 300px;
+  border: 1px solid;
+  position: relative;
+  overflow: hidden;
+}
+
+.demo-delay-wrapper:hover .demo-delay {
+  opacity: 1;
+  visibility: visible;
+  bottom: 50px;
+  background-color: indigo;
+}
+.demo-delay {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  bottom: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition-property: all;
+  transition-duration: 2s;
+  transition-delay: 5s;
+  transition-timing-function: ease-in-out;
+  color: #fff;
+  padding: 25px 10px;
+}
+
+/*.umumi {
+  transition: background 2s ease-in 0.5s; /* Property Duration Timing Function Delay */
